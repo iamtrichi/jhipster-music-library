@@ -1,0 +1,45 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="artiste">
+            <h2 data-cy="artisteDetailsHeading"><span jhiTranslate="musicLibraryApp.artiste.detail.title">Artiste</span></h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <jhi-alert></jhi-alert>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="global.field.id">ID</span></dt>
+                <dd>
+                    <span>{{ artiste.id }}</span>
+                </dd>
+                <dt><span jhiTranslate="musicLibraryApp.artiste.firstName">First Name</span></dt>
+                <dd>
+                    <span>{{ artiste.firstName }}</span>
+                </dd>
+                <dt><span jhiTranslate="musicLibraryApp.artiste.lastName">Last Name</span></dt>
+                <dd>
+                    <span>{{ artiste.lastName }}</span>
+                </dd>
+                <dt><span jhiTranslate="musicLibraryApp.artiste.dateNaiss">Date Naiss</span></dt>
+                <dd>
+                    {{ artiste.dateNaiss | formatMediumDate }}
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info"
+                    data-cy="entityDetailsBackButton">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/artiste', artiste.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
