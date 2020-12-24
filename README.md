@@ -1,3 +1,15 @@
+## Consul vs Eureka:
+Consul is a service discovery framework with a REST interface and some features such as health checking, service segmentation with its own internal distributed key-value store. Consul includes service discovery, but also rich health checking, locking, Key/value, multi-datacenter federation, an event system.
+
+Eureka – A service discovery tool, the architecture is primarily client/server, with clients mainly using embedded SDK to register and discover services. A service locator used as part of Netflix's load balancers and failovers. Eureka is a REST (Representational State Transfer) based service that is primarily used in the AWS cloud for locating services for the purpose of load balancing and failover of middle-tier servers.
+
+<p style="text-align: center;">
+    <img src="./pros.png"/><br/>
+    <img src="./company.png"/>
+    <img src="./tools.png"/>
+</p>
+
+
 ## Simple music library using Jhipster
 we used Jhipster to generate a monolith spring cloud/angular project of a simple music library
 ### Class diagram
