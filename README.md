@@ -1,5 +1,48 @@
-# music_library
+## Consul vs Eureka:
+Consul is a service discovery framework with a REST interface and some features such as health checking, service segmentation with its own internal distributed key-value store. Consul includes service discovery, but also rich health checking, locking, Key/value, multi-datacenter federation, an event system.
 
+Eureka – A service discovery tool, the architecture is primarily client/server, with clients mainly using embedded SDK to register and discover services. A service locator used as part of Netflix's load balancers and failovers. Eureka is a REST (Representational State Transfer) based service that is primarily used in the AWS cloud for locating services for the purpose of load balancing and failover of middle-tier servers.
+
+<p style="text-align: center;">
+    <img src="./pros.png"/><br/>
+    <img src="./company.png"/>
+    <img src="./tools.png"/>
+</p>
+
+
+## Simple music library using Jhipster
+we used Jhipster to generate a monolith spring cloud/angular project of a simple music library
+### Class diagram
+we used [JLD-Studio](https://start.jhipster.tech/jdl-studio/ "JLD-Studio") (online) to generate and visualise the class diagram of the project:
+https://start.jhipster.tech/jdl-studio/
+<p style="text-align: center;">
+  <img src="./class.png"/>
+</p>
+
+
+### Generating entities with Jhipster
+After generating the blank project we wanted to generate classes.
+So First we must download the .jdl file from [JLD-Studio](https://start.jhipster.tech/jdl-studio/ "JLD-Studio"). You can find the downloaded file in the code as text or in the image shown above.
+And then run the following command in the bash (command-line):
+````bash
+jhipster import-jdl ./jhipster-jdl.jdl --force
+````
+### Results
+
+<p style="text-align: center;">
+  <img src="./res.png"/>
+</p>
+
+<p style="text-align: center;">
+  <img src="./res0.png"/>
+</p>
+
+### Authors:
+- TRICHI Oussema
+- RHIBI Hamdi
+
+
+## Default readme
 This application was generated using JHipster 7.0.0-beta.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.0.0-beta.0](https://www.jhipster.tech/documentation-archive/v7.0.0-beta.0).
 
 ## Development
