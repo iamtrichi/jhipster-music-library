@@ -24,11 +24,13 @@ jhipster import-jdl ./jhipster-jdl.jdl --force
 <p style="text-align: center;">
   <img src="./res0.png"/>
 </p>
+
 ### Authors:
 - TRICHI Oussema
 - RHIBI Hamdi
 
 
+## Default readme
 This application was generated using JHipster 7.0.0-beta.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.0.0-beta.0](https://www.jhipster.tech/documentation-archive/v7.0.0-beta.0).
 
 ## Development
