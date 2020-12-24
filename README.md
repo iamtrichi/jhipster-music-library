@@ -3,7 +3,9 @@ we used Jhipster to generate a monolith spring cloud/angular project of a simple
 ### Class diagram
 we used [JLD-Studio](https://start.jhipster.tech/jdl-studio/ "JLD-Studio") (online) to generate and visualise the class diagram of the project:
 https://start.jhipster.tech/jdl-studio/
-<img src="class.png">
+<p style="text-align: center;">
+  <img src="./class.png"/>
+</p>
 
 
 ### Generating entities with Jhipster
@@ -14,12 +16,13 @@ And then run the following command in the bash (command-line):
 jhipster import-jdl ./jhipster-jdl.jdl --force
 ````
 ### Results
-<p>
-<img src="res.png" />
+
+<p style="text-align: center;">
+  <img src="./res.png"/>
 </p>
 
-<p>
-<img src="res0.png" />
+<p style="text-align: center;">
+  <img src="./res0.png"/>
 </p>
 ### Authors:
 - TRICHI Oussema
